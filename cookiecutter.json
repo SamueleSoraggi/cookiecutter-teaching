@@ -1,0 +1,9 @@
+
+{
+    "project_name": "cookiecutter_teaching",
+    "repo_name": "{{ cookiecutter.project_name.lower().replace(' ', '_') }}",
+    "author_name": "Samuele Soraggi - Aarhus University", #name of course author
+    "description": "Template for structuring an online course at the Health Data Science Sandbox project",
+    "open_source_license": ["No license file"],
+    "python_interpreter": ["python3"]
+}
