@@ -1,0 +1,1523 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+      <link rel="shortcut icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-6.1.4">
+    
+    
+      
+        <title>Software for HPC - EuroCC Knowledge Pool</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.358818c7.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.f0267088.min.css">
+        
+      
+    
+    
+    
+      
+        
+        <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700%7CRoboto+Mono&display=fallback">
+        <style>body,input{font-family:"Roboto",-apple-system,BlinkMacSystemFont,Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono",SFMono-Regular,Consolas,Menlo,monospace}</style>
+      
+    
+    
+    
+      <link rel="stylesheet" href="../extra.css">
+    
+    
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-0SFSYQYBDW"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {
+        dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
+    gtag('config', 'G-0SFSYQYBDW');
+</script>
+
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="" data-md-color-primary="none" data-md-color-accent="none">
+      
+  
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#software-for-hpc" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header-nav md-grid" aria-label="Header">
+    <a href=".." title="EuroCC Knowledge Pool" class="md-header-nav__button md-logo" aria-label="EuroCC Knowledge Pool">
+      
+  <img src="../img/boxLogo.png" alt="logo">
+
+    </a>
+    <label class="md-header-nav__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2z"/></svg>
+    </label>
+    <div class="md-header-nav__title" data-md-component="header-title">
+      
+        <div class="md-header-nav__ellipsis">
+          <span class="md-header-nav__topic md-ellipsis">
+            EuroCC Knowledge Pool
+          </span>
+          <span class="md-header-nav__topic md-ellipsis">
+            
+              Software for HPC
+            
+          </span>
+        </div>
+      
+    </div>
+    
+      <label class="md-header-nav__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0116 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 019.5 16 6.5 6.5 0 013 9.5 6.5 6.5 0 019.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+      </label>
+      
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" data-md-state="active">
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0116 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 019.5 16 6.5 6.5 0 013 9.5 6.5 6.5 0 019.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </label>
+      <button type="reset" class="md-search__icon md-icon" aria-label="Clear" data-md-component="search-reset" tabindex="-1">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg>
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              <div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="EuroCC Knowledge Pool" class="md-nav__button md-logo" aria-label="EuroCC Knowledge Pool">
+      
+  <img src="../img/boxLogo.png" alt="logo">
+
+    </a>
+    EuroCC Knowledge Pool
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href=".." class="md-nav__link">
+      Home
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../getstarted/" class="md-nav__link">
+      HPC 101
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../best/" class="md-nav__link">
+      Best practices
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../progr/" class="md-nav__link">
+      HPC programming
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../choice/" class="md-nav__link">
+      Choose your HPC
+    </a>
+  </li>
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#ml-and-ai" class="md-nav__link">
+    ML and AI
+  </a>
+  
+    <nav class="md-nav" aria-label="ML and AI">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#tensorflow" class="md-nav__link">
+    tensorflow
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pytorch" class="md-nav__link">
+    pyTorch
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#astrophysics-and-cosmology" class="md-nav__link">
+    Astrophysics and Cosmology
+  </a>
+  
+    <nav class="md-nav" aria-label="Astrophysics and Cosmology">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#cosmomc" class="md-nav__link">
+    COSMOMC
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#big-data-and-hpda" class="md-nav__link">
+    Big data and HPDA
+  </a>
+  
+    <nav class="md-nav" aria-label="Big data and HPDA">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#knime" class="md-nav__link">
+    KNIME
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#tracer" class="md-nav__link">
+    TRACER
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#bioinformatics" class="md-nav__link">
+    Bioinformatics
+  </a>
+  
+    <nav class="md-nav" aria-label="Bioinformatics">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#angsd" class="md-nav__link">
+    ANGSD
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#bedtools" class="md-nav__link">
+    BEDtools
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cellranger" class="md-nav__link">
+    Cellranger
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#homer" class="md-nav__link">
+    HOMER
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#kallisto" class="md-nav__link">
+    Kallisto
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#macs2" class="md-nav__link">
+    MACS2
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#salmon" class="md-nav__link">
+    Salmon
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#samtools" class="md-nav__link">
+    SAMtools
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#scanpy" class="md-nav__link">
+    Scanpy
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#seurat" class="md-nav__link">
+    Seurat
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#seqtk" class="md-nav__link">
+    Seqtk
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#star" class="md-nav__link">
+    STAR
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#computational-fluid-dynamics" class="md-nav__link">
+    Computational fluid dynamics
+  </a>
+  
+    <nav class="md-nav" aria-label="Computational fluid dynamics">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#openfoam" class="md-nav__link">
+    openFOAM
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ansys" class="md-nav__link">
+    ANSYS
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#computational-chemistry" class="md-nav__link">
+    Computational chemistry
+  </a>
+  
+    <nav class="md-nav" aria-label="Computational chemistry">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#gromacs" class="md-nav__link">
+    GROMACS
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#nwchem" class="md-nav__link">
+    NWchem
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#lammps" class="md-nav__link">
+    LAMMPS
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#quantumespresso" class="md-nav__link">
+    quantumESPRESSO
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#siesta" class="md-nav__link">
+    SIESTA
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#development" class="md-nav__link">
+    Development
+  </a>
+  
+    <nav class="md-nav" aria-label="Development">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#dash" class="md-nav__link">
+    Dash
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#jupyter-lab" class="md-nav__link">
+    Jupyter Lab
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#matlab" class="md-nav__link">
+    Matlab
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#rstudio" class="md-nav__link">
+    Rstudio
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#visual-studio-code" class="md-nav__link">
+    Visual Studio code
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#spark" class="md-nav__link">
+    Spark
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#natural-sciences-and-engineering" class="md-nav__link">
+    Natural sciences and engineering
+  </a>
+  
+    <nav class="md-nav" aria-label="Natural sciences and engineering">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#comsol" class="md-nav__link">
+    COMSOL
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#fenics" class="md-nav__link">
+    FEniCS
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#freecad" class="md-nav__link">
+    FreeCAD
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#probabilistic-programming" class="md-nav__link">
+    Probabilistic programming
+  </a>
+  
+    <nav class="md-nav" aria-label="Probabilistic programming">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#pymc3" class="md-nav__link">
+    pyMC3
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#social-sciences-humanities" class="md-nav__link">
+    Social Sciences, Humanities
+  </a>
+  
+    <nav class="md-nav" aria-label="Social Sciences, Humanities">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#netlogo" class="md-nav__link">
+    NetLogo
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#otree" class="md-nav__link">
+    oTree
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                
+                <h1 id="software-for-hpc">Software for HPC</h1>
+<p>This page contains useful links to tutorial, learning resources, benchmark and scripts for softwares usable on HPCs. Softwares are separated into broad scientific/application categories. Each tool has small numbers on its right side, indicating on which national HPC types those softwares are already installed. The symbol <img alt="🐍" class="twemoji" src="https://twemoji.maxcdn.com/v/latest/svg/1f40d.svg" title=":snake:" /> means that the software is available through the conda package manager for installation, for example, on the GenomeDK Type2 HPC. Remember, you can always contact an HPC front office to inquire about the installation of packages that you need for your applications.</p>
+<h2 id="ml-and-ai">ML and AI</h2>
+<h3 id="tensorflow">tensorflow  <img alt="1⃣" class="twemoji" src="https://twemoji.maxcdn.com/v/latest/svg/31-20e3.svg" title=":one:" /> <img alt="🐍" class="twemoji" src="https://twemoji.maxcdn.com/v/latest/svg/1f40d.svg" title=":snake:" /></h3>
+<p><code>Tensorflow</code> is the Google's open source library used to develop, train and deploy machine learning models. Tensorflow is implemented for <code>python</code>, but now also available in <code>R</code></p>
+<details class="links"><summary>Links</summary><table>
+<thead>
+<tr>
+<th align="left">Link</th>
+<th align="left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><a href="https://www.tensorflow.org/">Tensorflow homepage</a></td>
+<td align="left">Tensorflow home page. Contains many tutorials and howtos.</td>
+</tr>
+<tr>
+<td align="left"><a href="https://www.tensorflow.org/resources/learn-ml">Learning material</a></td>
+<td align="left">Books and courses in machine learning using tensorflow</td>
+</tr>
+<tr>
+<td align="left"><a href="https://tensorflow.rstudio.com/">R guide to tensorflow</a></td>
+<td align="left">How to install and use tensorflow in <code>Rstudio</code></td>
+</tr>
+</tbody>
+</table>
+</details>
+<h3 id="pytorch">pyTorch     <img alt="1⃣" class="twemoji" src="https://twemoji.maxcdn.com/v/latest/svg/31-20e3.svg" title=":one:" /> <img alt="🐍" class="twemoji" src="https://twemoji.maxcdn.com/v/latest/svg/1f40d.svg" title=":snake:" /></h3>
+<p><code>Pytorch</code> is another Machine Learning framework created mainly by Facebook.</p>
+<details class="links"><summary>Links</summary><table>
+<thead>
+<tr>
+<th align="left">Link</th>
+<th align="left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><a href="https://pytorch.org/">PyTorch homepage</a></td>
+<td align="left">The official <code>pyTorch</code> homepage, contains tutorials to learn how to use the framework</td>
+</tr>
+<tr>
+<td align="left"><a href="https://pytorch.org/assets/deep-learning/Deep-Learning-with-PyTorch.pdf">PyTorch book</a></td>
+<td align="left">A free book about deep learning with <code>pyTorch</code></td>
+</tr>
+<tr>
+<td align="left"><a href="https://www.youtube.com/watch?v=GIsg-ZUy0MY">PyTorch for deep learning</a></td>
+<td align="left">A full video tutorial on <code>PyTorch</code></td>
+</tr>
+</tbody>
+</table>
+</details>
+<h2 id="astrophysics-and-cosmology">Astrophysics and Cosmology</h2>
+<h3 id="cosmomc">COSMOMC <img alt="1⃣" class="twemoji" src="https://twemoji.maxcdn.com/v/latest/svg/31-20e3.svg" title=":one:" /></h3>
+<p>CosmoMC is a Fortran 2008 Markov-Chain Monte-Carlo (MCMC) engine for exploring cosmological parameter space, together with Fortran and python code for analysing Monte-Carlo samples and importance sampling (plus a suite of scripts for building grids of runs, plotting and presenting results). The code does brute force (but accurate) theoretical matter power spectrum and Cl calculations with CAMB.</p>
+<details class="links"><summary>Links</summary><table>
+<thead>
+<tr>
+<th align="left">Link</th>
+<th align="left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><a href="https://cosmologist.info/cosmomc/">CosmoMC homepage</a></td>
+<td align="left">The official homepage contains the documentation of <code>CosmoMC</code></td>
+</tr>
+<tr>
+<td align="left"><a href="http://background.uchicago.edu/~whu/Courses/Ast448_18/zacharegkas.pdf">Introduction to CAMB and CosmoMC</a></td>
+<td align="left">A presentation to introduce <code>CosmoMC</code> and <code>CAMB</code></td>
+</tr>
+<tr>
+<td align="left"><a href="http://icg.port.ac.uk/~jschewts/cantata/CAMB/CosmoMC_lecture.pdf">Tutorial for CosmoMC</a></td>
+<td align="left">A lecture with usage example of <code>CosmoMC</code></td>
+</tr>
+<tr>
+<td align="left"><a href="https://arxiv.org/abs/1808.05080 http://www.uco.es/~ajcuesta/cosmomc-ugr---day-2.pdf">CosmoMC Paper</a></td>
+<td align="left">Reference paper of <code>CosmoMC</code></td>
+</tr>
+</tbody>
+</table>
+</details>
+<h2 id="big-data-and-hpda">Big data and HPDA</h2>
+<h3 id="knime">KNIME <img alt="1⃣" class="twemoji" src="https://twemoji.maxcdn.com/v/latest/svg/31-20e3.svg" title=":one:" /></h3>
+<p>A tool to easily read and transform data, model and visualize it, integrate data science practices and produce insights.</p>
+<details class="links"><summary>Links</summary><table>
+<thead>
+<tr>
+<th align="left">Link</th>
+<th align="left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><a href="https://www.knime.com/getting-started-guide">Getting started</a></td>
+<td align="left">A practical example of data reading and manipulation</td>
+</tr>
+<tr>
+<td align="left"><a href="https://www.knime.com/sites/default/files/KNIME%20Analytics%20Platform%20Course%20for%20Beginners.pdf">KNIME platform presentation</a></td>
+<td align="left">Slides listing the KNIME properties and tools</td>
+</tr>
+<tr>
+<td align="left"><a href="https://forum.knime.com/">FORUM</a></td>
+<td align="left">Koin the community of users and ask/answer questions and problems</td>
+</tr>
+<tr>
+<td align="left"><a href="https://www.knime.com/learning">KNIME learning</a></td>
+<td align="left">A wide range of learning material to use KNIME proficiently</td>
+</tr>
+</tbody>
+</table>
+</details>
+<h3 id="tracer">TRACER <img alt="1⃣" class="twemoji" src="https://twemoji.maxcdn.com/v/latest/svg/31-20e3.svg" title=":one:" /> <img alt="🐍" class="twemoji" src="https://twemoji.maxcdn.com/v/latest/svg/1f40d.svg" title=":snake:" /></h3>
+<p>Tracer is graphical tool for visualization and diagnostics of MCMC output. It can read output files from MrBayes and BEAST.</p>
+<details class="links"><summary>Links</summary><table>
+<thead>
+<tr>
+<th align="left">Link</th>
+<th align="left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><a href="https://www.beast2.org/tracer-2/">TRACER documentation</a></td>
+<td align="left">Home page of <code>Beast2</code>, of which <code>tracer</code> is a tool. It contains tutorials and documentation.</td>
+</tr>
+</tbody>
+</table>
+</details>
+<h2 id="bioinformatics">Bioinformatics</h2>
+<h3 id="angsd">ANGSD <img alt="🐍" class="twemoji" src="https://twemoji.maxcdn.com/v/latest/svg/1f40d.svg" title=":snake:" /></h3>
+<p>A command line tool that integrates many different tools to analyze NGS data efficiently through native C++ implementation, multithreading support and calculation of genotype likelihoods instead of genotype calling. It is easily installed by downloading it from the <code>GitHub</code> repository and compilation of the code as per the instructions in the repository readme file.</p>
+<details class="links"><summary>Links</summary><table>
+<thead>
+<tr>
+<th align="left">Link</th>
+<th align="left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><a href="https://github.com/ANGSD/angsd">Github repository</a></td>
+<td align="left">Repository for download and installation</td>
+</tr>
+<tr>
+<td align="left"><a href="http://www.popgen.dk/angsd/index.php/ANGSD">Documentation</a></td>
+<td align="left">Documentation for ANGSD</td>
+</tr>
+</tbody>
+</table>
+</details>
+<h3 id="bedtools">BEDtools <img alt="1⃣" class="twemoji" src="https://twemoji.maxcdn.com/v/latest/svg/31-20e3.svg" title=":one:" /> <img alt="🐍" class="twemoji" src="https://twemoji.maxcdn.com/v/latest/svg/1f40d.svg" title=":snake:" /></h3>
+<p>Collectively, the bedtools utilities are a swiss-army knife of tools for a wide-range of genomics analysis tasks. The most widely-used tools enable genome arithmetic: that is, set theory on the genome. For example, bedtools allows one to intersect, merge, count, complement, and shuffle genomic intervals from multiple files in widely-used genomic file formats such as BAM, BED, GFF/GTF, VCF. While each individual tool is designed to do a relatively simple task (e.g., intersect two interval files), quite sophisticated analyses can be conducted by combining multiple bedtools operations on the UNIX command line.</p>
+<details class="links"><summary>Links</summary><table>
+<thead>
+<tr>
+<th align="left">Link</th>
+<th align="left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><a href="https://bedtools.readthedocs.io/en/latest/">Bedtools documentation</a></td>
+<td align="left">The documentation page. Contains well done tutorials and examples, both for beginners and advanced users.</td>
+</tr>
+</tbody>
+</table>
+</details>
+<h3 id="cellranger">Cellranger <img alt="1⃣" class="twemoji" src="https://twemoji.maxcdn.com/v/latest/svg/31-20e3.svg" title=":one:" /></h3>
+<p>The software pipeline used to align single cell sequencing data having Unique Molecular Identifier and coming as output from a 10X sequencing machine.</p>
+<details class="links"><summary>Links</summary><table>
+<thead>
+<tr>
+<th align="left">Link</th>
+<th align="left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><a href="https://support.10xgenomics.com/single-cell-gene-expression/software/pipelines/latest/what-is-cell-ranger">What is cellranger</a></td>
+<td align="left">Description of the cellranger pipeline</td>
+</tr>
+<tr>
+<td align="left"><a href="https://support.10xgenomics.com/single-cell-gene-expression/software/pipelines/latest/installation">Install cellranger</a></td>
+<td align="left">Installation guide</td>
+</tr>
+<tr>
+<td align="left"><a href="https://support.10xgenomics.com/single-cell-gene-expression/software/pipelines/latest/using/tutorial_ov">Use cellranger</a></td>
+<td align="left">User guide and tutorials</td>
+</tr>
+</tbody>
+</table>
+</details>
+<h3 id="homer">HOMER <img alt="1⃣" class="twemoji" src="https://twemoji.maxcdn.com/v/latest/svg/31-20e3.svg" title=":one:" /> <img alt="🐍" class="twemoji" src="https://twemoji.maxcdn.com/v/latest/svg/1f40d.svg" title=":snake:" /></h3>
+<p>HOMER (Hypergeometric Optimization of Motif EnRichment) is a suite of tools for Motif Discovery and next-gen sequencing analysis.  It is a collection of command line programs for UNIX-style operating systems written in Perl and C++. HOMER was primarily written as a de novo motif discovery algorithm and is well suited for finding 8-20 bp motifs in large scale genomics data.  HOMER contains many useful tools for analyzing ChIP-Seq, GRO-Seq, RNA-Seq, DNase-Seq, Hi-C and numerous other types of functional genomics sequencing data sets.</p>
+<details class="links"><summary>Links</summary><table>
+<thead>
+<tr>
+<th align="left">Link</th>
+<th align="left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><a href="http://homer.ucsd.edu/homer/index.html">HOMER homepage</a></td>
+<td align="left">Software homepage</td>
+</tr>
+<tr>
+<td align="left"><a href="http://homer.ucsd.edu/homer/introduction/configure.html">Configure HOMER</a></td>
+<td align="left">Setup and configuration</td>
+</tr>
+<tr>
+<td align="left"><a href="http://homer.ucsd.edu/homer/basicTutorial/index.html">Tutorial</a></td>
+<td align="left">Tutorial from the official home page</td>
+</tr>
+</tbody>
+</table>
+</details>
+<h3 id="kallisto">Kallisto <img alt="1⃣" class="twemoji" src="https://twemoji.maxcdn.com/v/latest/svg/31-20e3.svg" title=":one:" /> <img alt="🐍" class="twemoji" src="https://twemoji.maxcdn.com/v/latest/svg/1f40d.svg" title=":snake:" /></h3>
+<p><code>Kallisto</code> is a program for quantifying abundances of transcripts from bulk and single-cell RNA-Seq data, or more generally of target sequences using high-throughput sequencing reads. It is based on the novel idea of pseudoalignment for rapidly determining the compatibility of reads with targets, without the need for alignment.</p>
+<details class="links"><summary>Links</summary><table>
+<thead>
+<tr>
+<th align="left">Link</th>
+<th align="left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><a href="https://pachterlab.github.io/kallisto/about">Homepage</a></td>
+<td align="left">Software home page with tutorials and documentation</td>
+</tr>
+<tr>
+<td align="left"><a href="https://www.kallistobus.tools/about">Kallistobus</a></td>
+<td align="left">Workflow to use kallisto to generate the expression data matrix</td>
+</tr>
+<tr>
+<td align="left"><a href="http://www.nature.com/nbt/journal/v34/n5/full/nbt.3519.html">Reference</a></td>
+<td align="left">The Kallisto paper</td>
+</tr>
+</tbody>
+</table>
+</details>
+<h3 id="macs2">MACS2 <img alt="1⃣" class="twemoji" src="https://twemoji.maxcdn.com/v/latest/svg/31-20e3.svg" title=":one:" /> <img alt="🐍" class="twemoji" src="https://twemoji.maxcdn.com/v/latest/svg/1f40d.svg" title=":snake:" /></h3>
+<p>This tool identifies statistically significantly enriched genomic regions in ChIP- and DNase-seq data using the MACS2 algorithm (Model-Based Analysis of ChIP-Seq).</p>
+<details class="links"><summary>Links</summary><table>
+<thead>
+<tr>
+<th align="left">Link</th>
+<th align="left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><a href="https://chipster.csc.fi/manual/macs2.html">Manual</a></td>
+<td align="left">MACS2 manual</td>
+</tr>
+<tr>
+<td align="left"><a href="https://macs3-project.github.io/MACS/">Project page</a></td>
+<td align="left">Project page with installation and usage instructions</td>
+</tr>
+<tr>
+<td align="left"><a href="https://hbctraining.github.io/Intro-to-ChIPseq/lessons/05_peak_calling_macs.html">Tutorial</a></td>
+<td align="left">A tutorial for peak calling</td>
+</tr>
+<tr>
+<td align="left"><a href="http://www.ncbi.nlm.nih.gov/pubmed/18798982">Reference</a></td>
+<td align="left">Reference paper</td>
+</tr>
+</tbody>
+</table>
+</details>
+<h3 id="salmon">Salmon <img alt="1⃣" class="twemoji" src="https://twemoji.maxcdn.com/v/latest/svg/31-20e3.svg" title=":one:" /> <img alt="🐍" class="twemoji" src="https://twemoji.maxcdn.com/v/latest/svg/1f40d.svg" title=":snake:" /></h3>
+<p>Highly-accurate &amp; wicked fast transcript-level quantification from RNA-seq reads using selective alignment. Alevin, a tool integrated in Salmon, works on 3' tagged data, such as single cell data from 10X machines.</p>
+<details class="links"><summary>Links</summary><table>
+<thead>
+<tr>
+<th align="left">Link</th>
+<th align="left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><a href="https://salmon.readthedocs.io/en/latest/salmon.html">Salmon</a></td>
+<td align="left">Documentation and tutorial page for Salmon</td>
+</tr>
+<tr>
+<td align="left"><a href="https://salmon.readthedocs.io/en/latest/alevin.html">Alevin</a></td>
+<td align="left">Documentation and tutorial page for Alevin-Salmon</td>
+</tr>
+<tr>
+<td align="left"><a href="https://combine-lab.github.io/salmon/">Homepage</a></td>
+<td align="left">Software homepage</td>
+</tr>
+<tr>
+<td align="left"><a href="https://www.biorxiv.org/content/10.1101/657874v2">Reference</a></td>
+<td align="left">Reference paper</td>
+</tr>
+</tbody>
+</table>
+</details>
+<h3 id="samtools">SAMtools <img alt="1⃣" class="twemoji" src="https://twemoji.maxcdn.com/v/latest/svg/31-20e3.svg" title=":one:" /> <img alt="🐍" class="twemoji" src="https://twemoji.maxcdn.com/v/latest/svg/1f40d.svg" title=":snake:" /></h3>
+<p>Samtools is a suite of programs for interacting with high-throughput sequencing data. It consists of three separate repositories:
+- <strong>Samtools</strong>, Reading/writing/editing/indexing/viewing SAM/BAM/CRAM format
+- <strong>BCFtools</strong>, Reading/writing BCF2/VCF/gVCF files and calling/filtering/summarising SNP and short indel sequence variants
+- <strong>HTSlib</strong>, A C library for reading/writing high-throughput sequencing data</p>
+<details class="links"><summary>Links</summary><table>
+<thead>
+<tr>
+<th align="left">Link</th>
+<th align="left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><a href="http://www.htslib.org/">Homepage</a></td>
+<td align="left">Documentation and tutorial page</td>
+</tr>
+<tr>
+<td align="left"><a href="http://quinlanlab.org/tutorials/samtools/samtools.html">Tutorial 1</a></td>
+<td align="left">Samtools tutorial</td>
+</tr>
+<tr>
+<td align="left"><a href="http://davetang.org/wiki/tiki-index.php?page=SAMTools">Tutorial 2</a></td>
+<td align="left">Blogpost on SAMtools</td>
+</tr>
+</tbody>
+</table>
+</details>
+<h3 id="scanpy">Scanpy <img alt="🐍" class="twemoji" src="https://twemoji.maxcdn.com/v/latest/svg/1f40d.svg" title=":snake:" /></h3>
+<p>Scanpy is a scalable toolkit for analyzing single-cell gene expression data built jointly with anndata. It includes preprocessing, visualization, clustering, trajectory inference and differential expression testing. The Python-based implementation efficiently deals with datasets of more than one million cells.</p>
+<details class="links"><summary>Links</summary><table>
+<thead>
+<tr>
+<th align="left">Link</th>
+<th align="left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><a href="https://scanpy.readthedocs.io/en/stable/">Homepage</a></td>
+<td align="left">Documentation page with tutorials, package documentation and access to example datasets ready to use</td>
+</tr>
+</tbody>
+</table>
+</details>
+<h3 id="seurat">Seurat <img alt="🐍" class="twemoji" src="https://twemoji.maxcdn.com/v/latest/svg/1f40d.svg" title=":snake:" /></h3>
+<p>Parallely to Scanpy in python, Seurat is the leading package for single cell data analysis in R.</p>
+<details class="links"><summary>Links</summary><table>
+<thead>
+<tr>
+<th align="left">Link</th>
+<th align="left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><a href="https://satijalab.org/seurat/">Homepage</a></td>
+<td align="left">Documentation page with tutorials, package documentation and access to example datasets ready to use</td>
+</tr>
+</tbody>
+</table>
+</details>
+<h3 id="seqtk">Seqtk <img alt="1⃣" class="twemoji" src="https://twemoji.maxcdn.com/v/latest/svg/31-20e3.svg" title=":one:" /> <img alt="🐍" class="twemoji" src="https://twemoji.maxcdn.com/v/latest/svg/1f40d.svg" title=":snake:" /></h3>
+<p>Seqtk is a fast and lightweight tool for processing sequences in the FASTA or FASTQ format. It seamlessly parses both FASTA and FASTQ files which can also be optionally compressed by gzip.</p>
+<details class="links"><summary>Links</summary><table>
+<thead>
+<tr>
+<th align="left">Link</th>
+<th align="left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><a href="https://docs.csc.fi/apps/seqtk/">Homepage</a></td>
+<td align="left">Documentation page with command usage</td>
+</tr>
+<tr>
+<td align="left"><a href="https://github.com/lh3/seqtk">Repository and examples</a></td>
+<td align="left">Online repository with some usage examples</td>
+</tr>
+</tbody>
+</table>
+</details>
+<h3 id="star">STAR <img alt="1⃣" class="twemoji" src="https://twemoji.maxcdn.com/v/latest/svg/31-20e3.svg" title=":one:" /> <img alt="🐍" class="twemoji" src="https://twemoji.maxcdn.com/v/latest/svg/1f40d.svg" title=":snake:" /></h3>
+<p>Alignment method utilizes to align sequence reads to the reference genome</p>
+<details class="links"><summary>Links</summary><table>
+<thead>
+<tr>
+<th align="left">Link</th>
+<th align="left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><a href="https://github.com/alexdobin/STAR">Homepage</a></td>
+<td align="left">STAR software repository</td>
+</tr>
+<tr>
+<td align="left"><a href="hhttps://hbctraining.github.io/Intro-to-rnaseq-hpc-O2/lessons/03_alignment.html">Tutorial</a></td>
+<td align="left">Online tutorial to use the STAR aligner</td>
+</tr>
+</tbody>
+</table>
+</details>
+<h2 id="computational-fluid-dynamics">Computational fluid dynamics</h2>
+<h3 id="openfoam">openFOAM <img alt="1⃣" class="twemoji" src="https://twemoji.maxcdn.com/v/latest/svg/31-20e3.svg" title=":one:" /></h3>
+<p>OpenFOAM is the free, open source CFD software developed primarily by OpenCFD Ltd since 2004. It has a large user base across most areas of engineering and science, from both commercial and academic organisations. OpenFOAM has an extensive range of features to solve anything from complex fluid flows involving chemical reactions, turbulence and heat transfer, to acoustics, solid mechanics and electromagnetics.</p>
+<details class="links"><summary>Links</summary><table>
+<thead>
+<tr>
+<th align="left">Link</th>
+<th align="left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><a href="https://www.openfoam.com/">Homepage</a>, <a href="https://openfoam.org/">openFOAM foundation</a></td>
+<td align="left">Software homepage</td>
+</tr>
+<tr>
+<td align="left"><a href="https://www.cfd-online.com/Forums/openfoam/">Forum</a></td>
+<td align="left">OpenFOAM users forum</td>
+</tr>
+<tr>
+<td align="left"><a href="http://openfoamwiki.net/index.php/Main_Page">Wiki</a></td>
+<td align="left">OpenFOAM (unofficial) wiki</td>
+</tr>
+</tbody>
+</table>
+</details>
+<h3 id="ansys">ANSYS <img alt="1⃣" class="twemoji" src="https://twemoji.maxcdn.com/v/latest/svg/31-20e3.svg" title=":one:" /></h3>
+<details class="links"><summary>Links</summary><table>
+<thead>
+<tr>
+<th align="left">Link</th>
+<th align="left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><a href="https://web.engr.uky.edu/~jbaker/ansystutor.html">Tutorials for Undergraduate Mechanical Engineering Courses</a></td>
+<td align="left">Exercises intended only as an educational tool to assist those who wish to learn how to use ANSYS</td>
+</tr>
+<tr>
+<td align="left"><a href="https://www.youtube.com/watch?v=q-xdmKjnqS0">Basics video tutorial</a></td>
+<td align="left">Tutorial for the ANSYS basics</td>
+</tr>
+<tr>
+<td align="left"><a href="https://www.youtube.com/watch?v=vnpq5zzOS48">Introduction to static structural</a></td>
+<td align="left">Video introduction to static structural with ANSYS</td>
+</tr>
+<tr>
+<td align="left"><a href="https://www.youtube.com/watch?v=IyjdRHwujKI">Simulation of 3d centrifugal pump</a></td>
+<td align="left">Video guide to simulate a centrifugal pump with ANSYS</td>
+</tr>
+<tr>
+<td align="left"><a href="https://www.ansys.com/academic/free-student-products/support-resources">Support resources for students</a></td>
+<td align="left">Support resources for students. Includes the possibility for a free download of the software for a tryout.</td>
+</tr>
+<tr>
+<td align="left"><a href="https://sites.ualberta.ca/~wmoussa/AnsysTutorial/">University of Alberta - ANSYS Tutorials</a></td>
+<td align="left">ANSYS tutorials from the UNiversity of Alberta</td>
+</tr>
+</tbody>
+</table>
+</details>
+<h2 id="computational-chemistry">Computational chemistry</h2>
+<h3 id="gromacs">GROMACS <img alt="1⃣" class="twemoji" src="https://twemoji.maxcdn.com/v/latest/svg/31-20e3.svg" title=":one:" /></h3>
+<p>GROMACS is a versatile package to perform molecular dynamics, i.e. simulate the Newtonian equations of motion for systems with hundreds to millions of particles. It is primarily designed for biochemical molecules like proteins, lipids and nucleic acids that have a lot of complicated bonded interactions, but since GROMACS is extremely fast at calculating the nonbonded interactions (that usually dominate simulations) many groups are also using it for research on non-biological systems, e.g. polymers.</p>
+<details class="links"><summary>Links</summary><table>
+<thead>
+<tr>
+<th align="left">Link</th>
+<th align="left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><a href="http://www.gromacs.org/About_Gromacs">GROMACS</a></td>
+<td align="left">Official homepage</td>
+</tr>
+<tr>
+<td align="left"><a href="http://www.strodel.info/index_files/lecture/html/tutorial.html">KIGAKI3 tutorial</a></td>
+<td align="left">Tutorial with KIGAKI3 peptide model</td>
+</tr>
+<tr>
+<td align="left"><a href="http://www.mdtutorials.com/gmx/">MD tutorials</a></td>
+<td align="left">Six tutorials updated to one of the latest GROMACS software versions</td>
+</tr>
+<tr>
+<td align="left"><a href="http://www.mdtutorials.com/gmx/">More Tutorials</a></td>
+<td align="left">Six tutorials updated to one of the latest GROMACS software versions</td>
+</tr>
+<tr>
+<td align="left"><a href="https://mmb.irbbarcelona.org/biobb/availability/tutorials/protein-complex_md_setup">Complex MD tutorial</a></td>
+<td align="left">Complex and detailed MD tutorial from BioExcel. Requires the <a href="https://anaconda.org/bioconda/biobb_md">BioExcel biobb package</a></td>
+</tr>
+</tbody>
+</table>
+</details>
+<h3 id="nwchem">NWchem</h3>
+<p>The NWChem software contains computational chemistry tools that are scalable both in their ability to efficiently treat large scientific problems, and in their use of available computing resources from high-performance parallel supercomputers to conventional workstation clusters.</p>
+<p>NWChem can handle:
+- Biomolecules, nanostructures, and solid-state
+- From quantum to classical, and all combinations
+- Ground and excited-states
+- Gaussian basis functions or plane-waves
+- Scaling from one to thousands of processors
+- Properties and relativistic effects</p>
+<details class="links"><summary>Links</summary><table>
+<thead>
+<tr>
+<th align="left">Link</th>
+<th align="left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><a href="https://nwchemgit.github.io/">NWCHEM</a></td>
+<td align="left">Official homepage with tutorials and installation information</td>
+</tr>
+<tr>
+<td align="left"><a href="https://wiki.alcf.anl.gov/images/b/bc/NWChem_tutorial.pdf">Argonne NL tutorial</a></td>
+<td align="left">Tutorial from the Argonne national lab</td>
+</tr>
+</tbody>
+</table>
+</details>
+<h3 id="lammps">LAMMPS <img alt="1⃣" class="twemoji" src="https://twemoji.maxcdn.com/v/latest/svg/31-20e3.svg" title=":one:" /> <img alt="🐍" class="twemoji" src="https://twemoji.maxcdn.com/v/latest/svg/1f40d.svg" title=":snake:" /></h3>
+<p>LAMMPS is a classical molecular dynamics code with a focus on materials modeling. It's an acronym for Large-scale Atomic/Molecular Massively Parallel Simulator.</p>
+<details class="links"><summary>Links</summary><table>
+<thead>
+<tr>
+<th align="left">Link</th>
+<th align="left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><a href="https://nwchemgit.github.io/">NWCHEM</a></td>
+<td align="left">Official homepage with tutorials and installation information</td>
+</tr>
+<tr>
+<td align="left"><a href="https://www2.ph.ed.ac.uk/~cbrackle/lammps_tutorial.html">Very Basic Tutorial</a></td>
+<td align="left">Basic tutorial with one or more diffusing particles</td>
+</tr>
+<tr>
+<td align="left"><a href="https://github.com/mrkllntschpp/lammps-tutorials">Tutorials for beginners</a></td>
+<td align="left">Tutorials for beginners</td>
+</tr>
+<tr>
+<td align="left"><a href="https://www.osti.gov/servlets/purl/1563110">Supramolecular structures</a></td>
+<td align="left">Tutorials for modeling supramolecular structure in LAMMPS from Stan Moore, Sandia NL, USA</td>
+</tr>
+<tr>
+<td align="left"><a href="https://lammps.sandia.gov/tutorials.html">Material from Sandia NL</a></td>
+<td align="left">Tutorial collection from the Sandia National Lab's workshops</td>
+</tr>
+</tbody>
+</table>
+</details>
+<h3 id="quantumespresso">quantumESPRESSO <img alt="1⃣" class="twemoji" src="https://twemoji.maxcdn.com/v/latest/svg/31-20e3.svg" title=":one:" /> <img alt="🐍" class="twemoji" src="https://twemoji.maxcdn.com/v/latest/svg/1f40d.svg" title=":snake:" /></h3>
+<p>An integrated suite of Open-Source computer codes for electronic-structure calculations and materials modeling at the nanoscale. It is based on density-functional theory, plane waves, and pseudopotentials.</p>
+<details class="links"><summary>Links</summary><table>
+<thead>
+<tr>
+<th align="left">Link</th>
+<th align="left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><a href="https://www.quantum-espresso.org/">QuantumEspresso</a></td>
+<td align="left">Homepage with installation, documentation and learning resources</td>
+</tr>
+<tr>
+<td align="left"><a href="http://www.max-centre.eu/webinar/how-use-quantum-espresso-new-gpu-based-hpc-systems">QE and GPUs</a></td>
+<td align="left">How to use QuantumEspresso on GPU based HPC systems</td>
+</tr>
+<tr>
+<td align="left"><a href="http://www.fisica.uniud.it/~giannozz/QE-Tutorial/">Updated tutorials</a></td>
+<td align="left">Some updated tutorials from University of Udine, IT</td>
+</tr>
+<tr>
+<td align="left"><a href="https://www.paradim.org/toolbox/theory/quantum_espresso/tutorials">Step by step tutorial</a></td>
+<td align="left">A detailed tutorial (based on a specific supercomputing facility)</td>
+</tr>
+<tr>
+<td align="left"><a href="https://usc-rc.github.io/tutorials/qe">Small tutorial</a></td>
+<td align="left">A small QE tutorial</td>
+</tr>
+</tbody>
+</table>
+</details>
+<h3 id="siesta">SIESTA <img alt="1⃣" class="twemoji" src="https://twemoji.maxcdn.com/v/latest/svg/31-20e3.svg" title=":one:" /> <img alt="🐍" class="twemoji" src="https://twemoji.maxcdn.com/v/latest/svg/1f40d.svg" title=":snake:" /></h3>
+<p>SIESTA is both a method and its computer program implementation, to perform efficient electronic structure calculations and ab initio molecular dynamics simulations of molecules and solids. SIESTA's efficiency stems from the use of a basis set of strictly-localized atomic orbitals. A very important feature of the code is that its accuracy and cost can be tuned in a wide range, from quick exploratory calculations to highly accurate simulations matching the quality of other approaches, such as plane-wave methods.</p>
+<details class="links"><summary>Links</summary><table>
+<thead>
+<tr>
+<th align="left">Link</th>
+<th align="left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><a href="https://siesta.icmab.es/SIESTA_MATERIAL/Docs/Tutorials/index.html">large tutorial collection</a></td>
+<td align="left">A large collection of tutorials for Siesta</td>
+</tr>
+<tr>
+<td align="left"><a href="https://departments.icmab.es/leem/SIESTA_MATERIAL/Docs/Tutorials/tlv14/index.html">Tel Aviv Siesta tutorial</a></td>
+<td align="left">Siesta Workshop material</td>
+</tr>
+<tr>
+<td align="left"><a href="https://www.simuneatomistics.com/services-products/siesta-tutorials/">SIMUNE material</a></td>
+<td align="left">A range of tutorials to guide the learning process in using Siesta. Developed by Simune Atomistics</td>
+</tr>
+<tr>
+<td align="left"><a href="https://github.com/siesta-project/tutorials">Tutorial Repository</a></td>
+<td align="left">A big repository with exercises for Siesta</td>
+</tr>
+</tbody>
+</table>
+</details>
+<h2 id="development">Development</h2>
+<h3 id="dash">Dash <img alt="1⃣" class="twemoji" src="https://twemoji.maxcdn.com/v/latest/svg/31-20e3.svg" title=":one:" /> <img alt="🐍" class="twemoji" src="https://twemoji.maxcdn.com/v/latest/svg/1f40d.svg" title=":snake:" /></h3>
+<p>Dash is a productive Python framework for building web analytic applications. Dash is ideal for building data visualization apps with highly custom user interfaces in pure Python. It's particularly suited for anyone who works with data in Python.</p>
+<p>Through a couple of simple patterns, Dash abstracts away all of the technologies and protocols that are required to build an interactive web-based application. Dash is simple enough that you can bind a user interface around your Python code in an afternoon.</p>
+<p>Dash apps are rendered in the web browser. You can deploy your apps to servers and then share them through URLs. Since Dash apps are viewed in the web browser, Dash is inherently cross-platform and mobile ready.</p>
+<details class="links"><summary>Links</summary><table>
+<thead>
+<tr>
+<th align="left">Link</th>
+<th align="left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><a href="https://dash.plotly.com/">Dash homepage</a></td>
+<td align="left">The Dash homepage. It contains tutorial for a quick</td>
+</tr>
+<tr>
+<td align="left"><a href="https://www.youtube.com/watch?v=hSPmj7mK6ng">Video introduction</a></td>
+<td align="left">A video introduction to Dash</td>
+</tr>
+<tr>
+<td align="left"><a href="https://realpython.com/python-dash/">Step by step tutorial</a></td>
+<td align="left">A step by step tutorial to produce a Dash web application</td>
+</tr>
+</tbody>
+</table>
+</details>
+<h3 id="jupyter-lab">Jupyter Lab <img alt="1⃣" class="twemoji" src="https://twemoji.maxcdn.com/v/latest/svg/31-20e3.svg" title=":one:" /> <img alt="🐍" class="twemoji" src="https://twemoji.maxcdn.com/v/latest/svg/1f40d.svg" title=":snake:" /></h3>
+<p>JupyterLab is a web-based interactive development environment for Jupyter notebooks, code, and data. JupyterLab is flexible: configure and arrange the user interface to support a wide range of workflows in data science, scientific computing, and machine learning.</p>
+<table>
+<thead>
+<tr>
+<th align="left">Link</th>
+<th align="left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><a href="https://www.jupyter.org">Homepage</a></td>
+<td align="left">The Homepage of project jupyter</td>
+</tr>
+</tbody>
+</table>
+<h3 id="matlab">Matlab <img alt="1⃣" class="twemoji" src="https://twemoji.maxcdn.com/v/latest/svg/31-20e3.svg" title=":one:" /></h3>
+<p>MATLAB® combines a desktop environment tuned for iterative analysis and design processes with a programming language that expresses matrix and array mathematics directly. It includes the Live Editor for creating scripts that combine code, output, and formatted text in an executable notebook.</p>
+<table>
+<thead>
+<tr>
+<th align="left">Link</th>
+<th align="left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><a href="https://www.mathworks.com/products/matlab.html">Homepage</a></td>
+<td align="left">The Homepage of Mathworks Matlab</td>
+</tr>
+</tbody>
+</table>
+<h3 id="rstudio">Rstudio <img alt="1⃣" class="twemoji" src="https://twemoji.maxcdn.com/v/latest/svg/31-20e3.svg" title=":one:" /> <img alt="2⃣" class="twemoji" src="https://twemoji.maxcdn.com/v/latest/svg/32-20e3.svg" title=":two:" /></h3>
+<p>An integrated development environment for R and Python, with a console, syntax-highlighting editor that supports direct code execution, and tools for plotting, history, debugging and workspace management.</p>
+<table>
+<thead>
+<tr>
+<th align="left">Link</th>
+<th align="left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><a href="https://rstudio.com/">Homepage</a></td>
+<td align="left">The Homepage of Rstudio</td>
+</tr>
+</tbody>
+</table>
+<h3 id="visual-studio-code">Visual Studio code <img alt="1⃣" class="twemoji" src="https://twemoji.maxcdn.com/v/latest/svg/31-20e3.svg" title=":one:" /></h3>
+<p>Visual Studio Code is a lightweight but powerful source code editor. It comes with built-in support for JavaScript, TypeScript and Node.js and has a rich ecosystem of extensions for other languages (such as C++, C#, Java, Python, PHP, Go) and runtimes (such as .NET and Unity). Manages your Git repository and has a lot of plugins freely installable from the dedicated store.</p>
+<table>
+<thead>
+<tr>
+<th align="left">Link</th>
+<th align="left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><a href="https://code.visualstudio.com/">Homepage</a></td>
+<td align="left">The Homepage of Visual Studio Code</td>
+</tr>
+</tbody>
+</table>
+<h3 id="spark">Spark <img alt="1⃣" class="twemoji" src="https://twemoji.maxcdn.com/v/latest/svg/31-20e3.svg" title=":one:" /></h3>
+<p>Apache Spark is a lightning-fast unified analytics engine for big data and machine learning. It was originally developed at UC Berkeley in 2009.</p>
+<h2 id="natural-sciences-and-engineering">Natural sciences and engineering</h2>
+<h3 id="comsol">COMSOL <img alt="1⃣" class="twemoji" src="https://twemoji.maxcdn.com/v/latest/svg/31-20e3.svg" title=":one:" /></h3>
+<p>COMSOL Multiphysics is a cross-platform finite element analysis, solver and multiphysics simulation software. It allows conventional physics-based user interfaces and coupled systems of partial differential equations (PDEs). COMSOL provides an IDE and unified workflow for electrical, mechanical, fluid, acoustics, and chemical applications.</p>
+<table>
+<thead>
+<tr>
+<th align="left">Link</th>
+<th align="left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><a href="https://www.comsol.eu/models">COMSOL models</a></td>
+<td align="left">A gallery of applications from the COMSOL homepage</td>
+</tr>
+</tbody>
+</table>
+<h3 id="fenics">FEniCS <img alt="1⃣" class="twemoji" src="https://twemoji.maxcdn.com/v/latest/svg/31-20e3.svg" title=":one:" /> <img alt="🐍" class="twemoji" src="https://twemoji.maxcdn.com/v/latest/svg/1f40d.svg" title=":snake:" /></h3>
+<p>FEniCS is a popular open-source (LGPLv3) computing platform for solving partial differential equations (PDEs). FEniCS enables users to quickly translate scientific models into efficient finite element code. With the high-level Python and C++ interfaces to FEniCS, it is easy to get started, but FEniCS offers also powerful capabilities for more experienced programmers. FEniCS runs on a multitude of platforms ranging from laptops to high-performance clusters.</p>
+<table>
+<thead>
+<tr>
+<th align="left">Link</th>
+<th align="left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><a href="https://fenicsproject.org/">Homepage</a></td>
+<td align="left">Homepage of the FEniCS project</td>
+</tr>
+<tr>
+<td align="left"><a href="https://fenicsproject.org/tutorial/">Tutorials and book</a></td>
+<td align="left">Free official tutorials and book</td>
+</tr>
+</tbody>
+</table>
+<h3 id="freecad">FreeCAD <img alt="1⃣" class="twemoji" src="https://twemoji.maxcdn.com/v/latest/svg/31-20e3.svg" title=":one:" /> <img alt="🐍" class="twemoji" src="https://twemoji.maxcdn.com/v/latest/svg/1f40d.svg" title=":snake:" /></h3>
+<p>FreeCAD is a parametric 3D modeler made primarily to design real-life objects of any size.</p>
+<table>
+<thead>
+<tr>
+<th align="left">Link</th>
+<th align="left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><a href="https://www.youtube.com/watch?v=sxnij3CkkdU">Beginners tutorial</a></td>
+<td align="left">Beginners video tutorial</td>
+</tr>
+<tr>
+<td align="left"><a href="https://wiki.freecadweb.org/Tutorials">Free documentation</a></td>
+<td align="left">Freecad wiki</td>
+</tr>
+</tbody>
+</table>
+<h2 id="probabilistic-programming">Probabilistic programming</h2>
+<h3 id="pymc3">pyMC3 <img alt="🐍" class="twemoji" src="https://twemoji.maxcdn.com/v/latest/svg/1f40d.svg" title=":snake:" /></h3>
+<p>PyMC3 allows you to write down models using an intuitive syntax to describe a data generating process.</p>
+<p>Cutting edge algorithms and model building blocks
+Fit your model using gradient-based MCMC algorithms like NUTS, using ADVI for fast approximate inference — including minibatch-ADVI for scaling to large datasets — or using Gaussian processes to build Bayesian nonparametric models.</p>
+<table>
+<thead>
+<tr>
+<th align="left">Link</th>
+<th align="left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><a href="https://docs.pymc.io/">Documentation</a></td>
+<td align="left">Documentation page with tutorials, videos, examples and books</td>
+</tr>
+<tr>
+<td align="left"><a href="https://twiecki.io/">While my MCMC gently samples</a></td>
+<td align="left">A blog about pyMC3 and Bayesian inference</td>
+</tr>
+<tr>
+<td align="left"><a href="https://eigenfoo.xyz/bayesian-modelling-cookbook/">Bayesian modeling cookbook blog</a></td>
+<td align="left">A blog on bayesian modeling</td>
+</tr>
+<tr>
+<td align="left"><a href="https://colindcarroll.com/">Probabilistic Programming blog</a></td>
+<td align="left">A blog on probabilistic programming from a pyMC3 contributor</td>
+</tr>
+</tbody>
+</table>
+<h2 id="social-sciences-humanities">Social Sciences, Humanities</h2>
+<h3 id="netlogo">NetLogo <img alt="1⃣" class="twemoji" src="https://twemoji.maxcdn.com/v/latest/svg/31-20e3.svg" title=":one:" /></h3>
+<p>NetLogo is a multi-agent programmable modeling environment. It is used by many hundreds of thousands of students, teachers, and researchers worldwide. It also powers HubNet participatory simulations. It is authored by Uri Wilensky and developed at the CCL.</p>
+<table>
+<thead>
+<tr>
+<th align="left">Link</th>
+<th align="left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><a href="https://ccl.northwestern.edu/netlogo/">Homepage</a></td>
+<td align="left">Netlogo homepage with tutorials, extensions, resources.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="otree">oTree <img alt="1⃣" class="twemoji" src="https://twemoji.maxcdn.com/v/latest/svg/31-20e3.svg" title=":one:" /></h3>
+<p>An open-source platform for behavioral research</p>
+<p>oTree lets you create:
+- Controlled behavioral experiments in economics, market research, psychology, and related fields
+- Multiplayer strategy games, like the prisoner's dilemma, public goods game, and auctions.
+- Surveys and quizzes, especially those that require customized or dynamic functionality not available with conventional survey software.</p>
+<table>
+<thead>
+<tr>
+<th align="left">Link</th>
+<th align="left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><a href="https://www.otree.org/">Homepage</a></td>
+<td align="left">oTree homepage with tutorials, extensions, resources.</td>
+</tr>
+</tbody>
+</table>
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+      </main>
+      
+<p style="text-align:center;">
+  
+    This documentation is part of the EuroHPC Competence Center in Denmark, managed by DeiC.dk.
+
+</p>
+
+    </div>
+    
+      <script src="../assets/javascripts/vendor.7e0ee788.min.js"></script>
+      <script src="../assets/javascripts/bundle.b3a72adc.min.js"></script><script id="__lang" type="application/json">{"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing"}</script>
+      
+      <script>
+        app = initialize({
+          base: "..",
+          features: [],
+          search: Object.assign({
+            worker: "../assets/javascripts/worker/search.4ac00218.min.js"
+          }, typeof search !== "undefined" && search)
+        })
+      </script>
+      
+    
+  </body>
+</html>
