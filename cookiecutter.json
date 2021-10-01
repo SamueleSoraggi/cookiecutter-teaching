@@ -1,7 +1,4 @@
-
 {
-    "project_name": "cookiecutter_teaching",
-    "repo_name": "{{ cookiecutter.project_name.lower().replace(' ', '_') }}",
     "course_name": "Amazing-course",
     "author_name": "Health Data Science Team - Aarhus University",
     "description": "Template for structuring an online course at the Health Data Science Sandbox project",
