@@ -25,7 +25,7 @@ Modern CPUs support openMP in a natural way, since they are usually multicore CP
 
 MPI is used to distribute data to different processes, that otherwise could not access to such data (picture below, from [LLNL](https://computing.llnl.gov/tutorials/mpi/)). 
 
-![](https://computing.llnl.gov/tutorials/mpi/images/distributed_mem.gif)
+![](https://hpc-tutorials.llnl.gov/mpi/images/distributed_mem.gif)
 
 MPI is considered a very hard language to learn, but this reputation is mostly due to the fact that the message passing is programmed explicitely.
 

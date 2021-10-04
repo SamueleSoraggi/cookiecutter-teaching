@@ -8,9 +8,6 @@ docs_dir: develop
 site_dir: docs
 plugins:
     - search
-    - pdf-export:
-        combined: true
-        media_type: print
 extra_css:
     - extra.css
 theme: 

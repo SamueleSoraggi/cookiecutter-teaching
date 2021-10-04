@@ -62,4 +62,3 @@ Using an HPC offers many advantages, not only limited to the resources available
 
 Students are not authorized to ask for resources. It will be responsibility of the lecturer/professor to obtain resources through the front office or facilitator. Any student can then be invited/authorized in accessing the project whose resources have been allocated to.
 
-
