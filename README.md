@@ -2,7 +2,7 @@
 
 This repository contains a basic structure to organize a course or research training in health data science. The template is downloaded through the ` python` package `cookiecutter` simply with the command
 
-`cookiecutter https://github.com/SamueleSoraggi/cookiecutter-teaching.git `
+`https://github.com/hdsSandbox/cookiecutter-teaching.git `
 
 This require the installation of the [package cookiecutter](https://cookiecutter.readthedocs.io/). Once you run the command, you are presented with a few questions, such as course name and author. Once those are inserted, you will get a folder structure that contains the following subfolders:
 
