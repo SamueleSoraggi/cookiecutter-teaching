@@ -6,7 +6,7 @@ This repository contains a basic structure to organize a course or research trai
 
 This require the installation of the [package cookiecutter](https://cookiecutter.readthedocs.io/). Once you run the command, you are presented with a few questions, such as course name and author. Once those are inserted, you will get a folder structure that contains the following subfolders:
 
-*  Assignments
+* Assignments
 * Data
 * develop
 * Environments
@@ -24,9 +24,7 @@ The folder ` develop` is dedicated to the course web/documentation page. This is
 The package needed to install are `mkdocs`, `mkdocs-material`, and `mkdocs-material-extensions` . This can be easily done through the `conda` package manager with
 
 ```shell
-conda install -c conda-forge mkdocs
-conda install -c conda-forge mkdocs-material
-conda install -c conda-forge mkdocs-material-extensions
+conda install -c conda-forge mkdocs mkdocs-material mkdocs-material-extensions mkdocs-jupyter
 ```
 
 or with `pip` through
@@ -41,7 +39,7 @@ pip install mkdocs-material-extensions
 
 Open as text the file `mkdocs.yml`. Here you will see various settings, which are mostly ready-to-use. You will need eventually to change the following:
 
-*  `site_name:` Here the name of the webpage is given by default following your course name given to `cookiecutter`, but you can write something else.
+* `site_name:` Here the name of the webpage is given by default following your course name given to `cookiecutter`, but you can write something else.
 * `nav:` this setting lists the `markdown` documents you want to use as webpages, and which name they have when they appear on the webpage menu.
 * `theme:` this option contains the possibility of choosing a picture as logo for your webpage with the option `logo:`. Here there is one by default that you can change.
 
